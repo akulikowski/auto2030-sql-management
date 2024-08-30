@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FahrzeugEinzel</class>
+ <widget class="QMainWindow" name="FahrzeugEinzel">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>295</width>
+    <height>208</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Fahrzeug Einzelanzeige</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>41</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditID">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>161</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditTyp">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>130</y>
+      <width>161</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditKennzeichen">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>161</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kennzeichen:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Typ:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPreisProTag">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>100</y>
+      <width>161</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bezeichnung:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditBezeichnung">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>161</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Preis pro Tag:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionGanz_nach_vorne"/>
+   <addaction name="actionEinen_nach_vorne"/>
+   <addaction name="actionEinen_nach_hinten"/>
+   <addaction name="actionGanz_nach_hinten"/>
+   <addaction name="actionL_schen"/>
+  </widget>
+  <action name="actionGanz_nach_vorne">
+   <property name="icon">
+    <iconset resource="symbole.qrc">
+     <normaloff>:/symbole/ganzvorne.xpm</normaloff>:/symbole/ganzvorne.xpm</iconset>
+   </property>
+   <property name="text">
+    <string>Ganz nach vorne</string>
+   </property>
+  </action>
+  <action name="actionEinen_nach_vorne">
+   <property name="icon">
+    <iconset resource="symbole.qrc">
+     <normaloff>:/symbole/vorne.xpm</normaloff>:/symbole/vorne.xpm</iconset>
+   </property>
+   <property name="text">
+    <string>Einen nach vorne</string>
+   </property>
+  </action>
+  <action name="actionEinen_nach_hinten">
+   <property name="icon">
+    <iconset resource="symbole.qrc">
+     <normaloff>:/symbole/hinten.xpm</normaloff>:/symbole/hinten.xpm</iconset>
+   </property>
+   <property name="text">
+    <string>Einen nach hinten</string>
+   </property>
+  </action>
+  <action name="actionGanz_nach_hinten">
+   <property name="icon">
+    <iconset resource="symbole.qrc">
+     <normaloff>:/symbole/ganzhinten.xpm</normaloff>:/symbole/ganzhinten.xpm</iconset>
+   </property>
+   <property name="text">
+    <string>Ganz nach hinten</string>
+   </property>
+  </action>
+  <action name="actionL_schen">
+   <property name="icon">
+    <iconset resource="symbole.qrc">
+     <normaloff>:/symbole/loeschen.xpm</normaloff>:/symbole/loeschen.xpm</iconset>
+   </property>
+   <property name="text">
+    <string>Löschen</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditID</tabstop>
+  <tabstop>lineEditBezeichnung</tabstop>
+  <tabstop>lineEditKennzeichen</tabstop>
+  <tabstop>lineEditPreisProTag</tabstop>
+  <tabstop>lineEditTyp</tabstop>
+ </tabstops>
+ <resources>
+  <include location="symbole.qrc"/>
+ </resources>
+ <connections/>
+</ui>
